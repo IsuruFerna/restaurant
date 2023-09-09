@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Roboto:ital,wght@0,300;0,400;0,700;1,900&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --menu-main-padding-x: 3.6em;
+}
+
+h1,
+h2 {
+   text-align: center;
+}
+
+body {
+   background-image: url("../img/bg.jpg");
+   width: 100%;
+   font-family: "Roboto", sans-serif;
+}
+
+/******************** menu-main-section -- bootstrap modification ***********************/
+
+.nav-fill .nav-item .nav-link,
+.nav-justified .nav-item .nav-link {
+   width: 100%;
+   min-width: 20vw;
+}
+
+.nav {
+   --bs-nav-link-hover-color: var(--bs-gray-500);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+   color: var(--bs-nav-pills-link-active-color);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+   color: var(--bs-nav-pills-link-active-color);
+   background: rgb(160, 103, 1);
+   background: linear-gradient(
+      90deg,
+      rgba(160, 103, 1, 1) 0%,
+      rgba(223, 191, 62, 1) 51%,
+      rgba(252, 246, 198, 1) 77%,
+      rgba(185, 119, 0, 1) 100%
+   );
+}
+
+.nav-link {
+   color: var(--bs-white);
+   padding-left: var(--menu-main-padding-x);
+   padding-right: var(--menu-main-padding-x);
+   /* min-width: auto; */
+   /* width: 60vw; */
+}
+
+.nav-link.active {
+   color: var(--bs-black) !important;
+}
+
+/******************** menu-main-section-end ***********************/
+header {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo {
+   margin: 4vh 0 2.6vh;
+   /* margin-bottom: 2.6vh; */
+}
+
+.primary-title {
+   margin-bottom: 2vh;
+   font-weight: 900;
+   font-style: italic;
+   font-size: 0.6em;
+}
+
+.primary-title,
+.secondary-title {
+   color: rgba(223, 191, 62, 1);
+}
+
+.third-title {
+   border-bottom: 2px solid #fff;
+}
+
+h1 {
+   font-size: 3.6em;
+}
+
+h2 {
+   font-family: "Merienda", cursive;
+   font-size: 3em;
+}
+
+h3 {
+   color: var(--bs-white);
+   font-weight: bold;
+   font-size: 2.8em;
+}
+
+.menu ul {
+   list-style: none;
+   padding: 0;
+   text-align: center;
+   margin-top: 2em;
+   color: var(--bs-white);
+   font-size: 1.2em;
+}
+
+.menu ul li:first-child {
+   font-size: 0.6em;
+   margin-bottom: 1em;
+}
+
+.menu ul li a {
+   text-decoration: none;
+   color: var(--bs-white);
+}
+
+.menu ul li a:hover,
+.menu ul li a:active {
+   color: var(--bs-gray-500);
+}
+
+.container-menu {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+}
+
+.menu-items {
+   width: 68%;
+   padding: 3em;
+}
+
+.menu-img {
+   width: 30%;
+}
+
+.menu-listing {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   margin-top: 1em;
+   justify-content: space-around;
+   align-content: stretch;
+}
+
+.menu-item {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   padding-left: 1.5em;
+}
+
+.name,
+.price {
+   font-size: 2em;
+   color: var(--bs-white);
+}
+
+.name {
+   width: 70%;
+}
+
+.name p {
+   margin-bottom: 0;
+}
+
+.price {
+   text-align: right;
+   width: 30%;
+}
+
+.ingredients {
+   font-size: 0.4em;
+   padding-left: 2em;
+}
