@@ -1,0 +1,44 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-image: url("assets/img/bg.jpg");
+   width: 100%;
+}
+
+/******************** menu-main-section -- bootstrap modification ***********************/
+
+.nav {
+   --bs-nav-link-hover-color: var(--bs-gray-500);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+   color: var(--bs-nav-pills-link-active-color);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+   color: var(--bs-nav-pills-link-active-color);
+   background: rgb(160, 103, 1);
+   background: linear-gradient(
+      90deg,
+      rgba(160, 103, 1, 1) 0%,
+      rgba(223, 191, 62, 1) 51%,
+      rgba(252, 246, 198, 1) 77%,
+      rgba(185, 119, 0, 1) 100%
+   );
+}
+
+.nav-link {
+   color: var(--bs-white);
+}
+
+.nav-link.active {
+   color: var(--bs-black) !important;
+}
+
+/******************** menu-main-section-end ***********************/
