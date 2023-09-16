@@ -145,6 +145,12 @@ h3 {
 
 .menu-img {
    width: 30%;
+   text-align: center;
+}
+
+.menu-img img {
+   width: 80%;
+   padding-bottom: 1.8em;
 }
 
 .menu-listing {
@@ -185,4 +191,56 @@ h3 {
 .ingredients {
    font-size: 0.4em;
    padding-left: 2em;
+}
+
+/* *************** Media querry **************** */
+
+/* mobile from 425px  */
+@media screen and (max-width: 425px) {
+   .logo {
+      text-align: center;
+   }
+
+   .logo img {
+      width: 60%;
+   }
+
+   .primary-title {
+      font-size: 0.4em;
+   }
+
+   nav ul {
+      width: 85%;
+      margin: 0 auto;
+   }
+
+   .nav-link {
+      text-align: center;
+   }
+
+   .container {
+      padding-top: 2em;
+   }
+
+   .container-menu {
+      flex-direction: column;
+   }
+
+   .menu-items,
+   .menu-img {
+      width: 100%;
+   }
+
+   .secondary-title {
+      font-size: 0.8em;
+   }
+
+   .menu-items {
+      font-size: 0.4em;
+      padding-top: 1.2em;
+   }
+
+   .ingredients p {
+      font-size: 2em;
+   }
 }
