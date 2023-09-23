@@ -1,4 +1,5 @@
 // creating the menu
+// continua aggiungere dal line 404 (beef devilled)
 menu = {
    sri_lankan: [
       {
@@ -171,20 +172,237 @@ menu = {
       },
       {
          type: "chili",
-         name: "prawn noodles",
+         name: "chili chicken",
+         price: ["20.00"],
+         ingredient: [
+            ["pollo"],
+            ["salsa piccante", "farina di mais", "carote", "chipolla"],
+         ],
+      },
+      {
+         type: "chili",
+         name: "chili pork",
+         price: ["20.00"],
+         ingredient: [
+            ["suino"],
+            ["salsa piccante", "farina di mais", "carote", "chipolla"],
+         ],
+      },
+      {
+         type: "chili",
+         name: "chili beef",
+         price: ["20.00"],
+         ingredient: [
+            ["manzo"],
+            ["salsa piccante", "farina di mais", "carote", "chipolla"],
+         ],
+      },
+      {
+         type: "kottu",
+         name: "mix kottu",
          price: ["10.00", "15.00"],
          ingredient: [
-            ["gamberi"],
+            ["pollo", "manzo", "suino"],
             [
-               "spaghetti a pezzetti di riso",
-               "carote",
+               "piadina a pezzetti tipo 00",
                "porri",
+               "carote",
+               "uova",
+               "salsa di soiya",
+               "salsa di ostriche",
+               "cappuccio",
                "uova",
                "aglio",
-               "zenzero",
             ],
          ],
       },
+      {
+         type: "kottu",
+         name: "chicken kottu",
+         price: ["8.00", "14.00"],
+         ingredient: [
+            ["pollo"],
+            [
+               "piadina a pezzetti tipo 00",
+               "porri",
+               "carote",
+               "uova",
+               "salsa di soiya",
+               "salsa di ostriche",
+               "cappuccio",
+               "uova",
+               "aglio",
+            ],
+         ],
+      },
+      {
+         type: "kottu",
+         name: "cheese kottu",
+         price: ["15.00", "20.00"],
+         ingredient: [
+            ["pollo", "manzo", "suino"],
+            [
+               "piadina a pezzetti tipo 00",
+               "porri",
+               "carote",
+               "uova",
+               "salsa di soiya",
+               "salsa di ostriche",
+               "cappuccio",
+               "uova",
+               "aglio",
+            ],
+         ],
+      },
+      {
+         type: "kottu",
+         name: "beef kottu",
+         price: ["10.00", "15.00"],
+         ingredient: [
+            ["manzo"],
+            [
+               "piadina a pezzetti tipo 00",
+               "porri",
+               "carote",
+               "uova",
+               "salsa di soiya",
+               "salsa di ostriche",
+               "cappuccio",
+               "uova",
+               "aglio",
+            ],
+         ],
+      },
+      {
+         type: "kottu",
+         name: "pork kottu",
+         price: ["10.00", "15.00"],
+         ingredient: [
+            ["suino"],
+            [
+               "piadina a pezzetti tipo 00",
+               "porri",
+               "carote",
+               "uova",
+               "salsa di soiya",
+               "salsa di ostriche",
+               "cappuccio",
+               "uova",
+               "aglio",
+            ],
+         ],
+      },
+      {
+         type: "kottu",
+         name: "egg kottu",
+         price: ["10.00"],
+         ingredient: [
+            [],
+            [
+               "piadina a pezzetti tipo 00",
+               "porri",
+               "carote",
+               "uova",
+               "salsa di soiya",
+               "salsa di ostriche",
+               "cappuccio",
+               "uova",
+               "aglio",
+            ],
+         ],
+      },
+      {
+         type: "kottu",
+         name: "string hoppers kottu",
+         price: ["10.00"],
+         ingredient: [
+            ["pollo", "manzo", "suino"],
+            [
+               "spaghetti di riso",
+               "porri",
+               "carote",
+               "uova",
+               "salsa di soiya",
+               "salsa di ostriche",
+               "cappuccio",
+               "uova",
+               "aglio",
+            ],
+         ],
+      },
+      {
+         type: "fried",
+         name: "mixed fried",
+         price: ["20.00"],
+         ingredient: [
+            ["pollo", "manzo", "suino", "gamberi", "pecse"],
+            ["cipolla", "peperoni", "aglio", "zenzero", "pepe", "sale"],
+         ],
+      },
+      {
+         type: "fried",
+         name: "beef fried",
+         price: ["12.00", "18.00"],
+         ingredient: [
+            ["manzo"],
+            ["cipolla", "peperoni", "aglio", "zenzero", "pepe", "sale"],
+         ],
+      },
+      {
+         type: "fried",
+         name: "pork fried",
+         price: ["12.00", "18.00"],
+         ingredient: [
+            ["suino"],
+            ["cipolla", "peperoni", "aglio", "zenzero", "pepe", "sale"],
+         ],
+      },
+      {
+         type: "fried",
+         name: "chicken fried",
+         price: ["10.00", "15.00"],
+         ingredient: [
+            ["pollo"],
+            ["cipolla", "peperoni", "aglio", "zenzero", "pepe", "sale"],
+         ],
+      },
+      {
+         type: "fried",
+         name: "fish fried",
+         price: ["12.00", "18.00"],
+         ingredient: [
+            ["pesce"],
+            ["cipolla", "peperoni", "aglio", "zenzero", "pepe", "sale"],
+         ],
+      },
+      {
+         type: "fried",
+         name: "prawn fried",
+         price: ["14.00", "20.00"],
+         ingredient: [
+            ["gamberi"],
+            ["cipolla", "peperoni", "aglio", "zenzero", "pepe", "sale"],
+         ],
+      },
+      {
+         type: "fried",
+         name: "cuttlefish fried",
+         price: ["14.00", "20.00"],
+         ingredient: [
+            ["seppia"],
+            ["cipolla", "peperoni", "aglio", "zenzero", "pepe", "sale"],
+         ],
+      },
+      {
+         type: "devilled",
+         name: "chicken devilled",
+         price: ["10.00", "15.00"],
+         ingredient: [
+            ["pollo"],
+            ["kechup", "aglio", "zenzero", "cipolla", "pomodoro"],
+         ],
+      },
+      // ********** Manca dal beef devilled ***********
    ],
    pizza: [
       {
