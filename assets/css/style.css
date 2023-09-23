@@ -212,6 +212,10 @@ h3 {
 
 /* mobile from 425px  */
 @media screen and (max-width: 425px) {
+   body {
+      background-image: url("../img/bg-tablet-960_960.jpg");
+   }
+
    .logo {
       text-align: center;
    }
@@ -257,5 +261,33 @@ h3 {
 
    .ingredients p {
       font-size: 1.8em;
+   }
+}
+
+/* tablet from 768px */
+@media only screen and (min-width: 768px) {
+   body {
+      background-image: url("../img/bg-tablet-960_960.jpg");
+   }
+}
+
+/* tablet from 768px */
+@media only screen and (min-width: 768px) {
+   body {
+      background-image: url("../img/bg-tablet-960_960.jpg");
+   }
+}
+
+/* laptop from 1024px */
+@media only screen and (min-width: 1024px) {
+   body {
+      background-image: url("../img/bg-laptop-1366_768.jpg");
+   }
+}
+
+/* hd from 1440px */
+@media only screen and (min-width: 1440px) {
+   body {
+      background-image: url("../img/bg-hd-1920_1080.jpg");
    }
 }
