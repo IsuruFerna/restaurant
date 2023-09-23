@@ -89,6 +89,102 @@ menu = {
             ["farina di mais", "grano tenero", "uova", "sale"],
          ],
       },
+      {
+         type: "noodles",
+         name: "mix noodles",
+         price: ["10.00", "16.00"],
+         ingredient: [
+            ["pollo", "manzo", "suino", "gamberi"],
+            [
+               "spaghetti a pezzetti di riso",
+               "carote",
+               "porri",
+               "uova",
+               "aglio",
+               "zenzero",
+            ],
+         ],
+      },
+      {
+         type: "noodles",
+         name: "chicken noodles",
+         price: ["10.00", "14.00"],
+         ingredient: [
+            ["pollo"],
+            [
+               "spaghetti a pezzetti di riso",
+               "carote",
+               "porri",
+               "uova",
+               "aglio",
+               "zenzero",
+            ],
+         ],
+      },
+      {
+         type: "noodles",
+         name: "egg noodles",
+         price: ["10.00", "14.00"],
+         ingredient: [
+            [],
+            [
+               "spaghetti a pezzetti di riso",
+               "carote",
+               "porri",
+               "uova",
+               "aglio",
+               "zenzero",
+            ],
+         ],
+      },
+      {
+         type: "noodles",
+         name: "sea food noodles",
+         price: ["12.00", "18.00"],
+         ingredient: [
+            ["gamberi", "seppia", "pesce"],
+            [
+               "spaghetti a pezzetti di riso",
+               "carote",
+               "porri",
+               "uova",
+               "aglio",
+               "zenzero",
+            ],
+         ],
+      },
+      {
+         type: "noodles",
+         name: "prawn noodles",
+         price: ["10.00", "15.00"],
+         ingredient: [
+            ["gamberi"],
+            [
+               "spaghetti a pezzetti di riso",
+               "carote",
+               "porri",
+               "uova",
+               "aglio",
+               "zenzero",
+            ],
+         ],
+      },
+      {
+         type: "chili",
+         name: "prawn noodles",
+         price: ["10.00", "15.00"],
+         ingredient: [
+            ["gamberi"],
+            [
+               "spaghetti a pezzetti di riso",
+               "carote",
+               "porri",
+               "uova",
+               "aglio",
+               "zenzero",
+            ],
+         ],
+      },
    ],
    pizza: [
       {
