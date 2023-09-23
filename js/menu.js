@@ -1,6 +1,6 @@
 // creating the menu
 // continua aggiungere dal line 404 (beef devilled)
-menu = {
+const menu = {
    sri_lankan: [
       {
          type: "rice",
@@ -622,3 +622,8 @@ menu = {
    ],
    bibite: [],
 };
+
+// exporting menu as a JSON
+const menu_data = JSON.stringify(menu);
+
+export { menu_data };
