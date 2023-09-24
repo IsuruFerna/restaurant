@@ -56,6 +56,50 @@ document.addEventListener("DOMContentLoaded", function () {
                const devilled = document.getElementById("devilled");
                renderEachMenuList(element, devilled);
             }
+            if (element.type === "stew") {
+               const stew = document.getElementById("stew");
+               renderEachMenuList(element, stew);
+            }
+            if (element.type === "short eats") {
+               const short_eats = document.getElementById("short_eats");
+               renderEachMenuList(element, short_eats);
+            }
+            if (element.type === "dessert") {
+               const dessert = document.getElementById("dessert");
+               renderEachMenuList(element, dessert);
+            }
+            if (element.type === "ice cream") {
+               const ice_cream = document.getElementById("ice_cream");
+               renderEachMenuList(element, ice_cream);
+            }
+            if (element.type === "frutta") {
+               const frutta = document.getElementById("frutta");
+               renderEachMenuList(element, frutta);
+            }
+         }
+
+         // render menu dessert
+         if (obj === "dessert") {
+            if (element.type === "dessert") {
+               const dessert = document.getElementById("dessert");
+               renderEachMenuList(element, dessert);
+            }
+         }
+
+         // render menu ice cream
+         if (obj === "iceCream") {
+            if (element.type === "ice cream") {
+               const ice_cream = document.getElementById("ice_cream");
+               renderEachMenuList(element, ice_cream);
+            }
+         }
+
+         // render menu frutta
+         if (obj === "frutta") {
+            if (element.type === "frutta") {
+               const frutta = document.getElementById("frutta");
+               renderEachMenuList(element, frutta);
+            }
          }
       });
    }
