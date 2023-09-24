@@ -5,7 +5,11 @@ import { menu_data } from "./menu.js";
 //    // console.log(positionY);
 // });
 
+// wait until page loads all the contents
 document.addEventListener("DOMContentLoaded", function () {
+   // menu primary - choose main sections
+   menuPrimary();
+
    // retriving data as JSON
    const data = JSON.parse(menu_data);
 
@@ -130,4 +134,60 @@ const renderEachMenuList = function (element, appendIn) {
               `;
 
    appendIn.getElementsByClassName("menu-items")[0].appendChild(menuListing);
+};
+
+// main menu - the section in the main page to choose between ("sting hoppers", "ristorante-pizzeria-bar", "contact")
+const menuPrimary = function () {
+   const menu = document.getElementById("pillNav2");
+   let btnMenu = menu.getElementsByTagName("button");
+   btnMenu = Array.from(btnMenu);
+   const titleMain = document.getElementById("main-title");
+   const logoPrimary = document.getElementById("logo-primary");
+   const containerRistorante = document.getElementById(
+      "container-ristorante-page"
+   );
+   const conatainerStringHoppers = document.getElementById(
+      "container-string_hoppers-page"
+   );
+
+   // default when the page loads don't display the string hopper page
+   conatainerStringHoppers.style.display = "none";
+
+   // when user click on a button in main menu
+   btnMenu.forEach((btn, index) => {
+      btn.addEventListener("click", function () {
+         btnMenu.forEach((elemet) => {
+            elemet.classList.remove("active");
+         });
+
+         // run clicked btn functionallity
+         // change the logo and title
+         this.classList.add("active");
+
+         if (index === 0) {
+            // string hoppers
+
+            titleMain.innerText = "STRING HOPPERS";
+            logoPrimary.setAttribute(
+               "src",
+               "./assets/img/log-string-hoppers.png"
+            );
+            containerRistorante.style.display = "none";
+            conatainerStringHoppers.style.display = "block";
+         } else if (index === 1) {
+            // ristorante-pizzeria-bar
+
+            titleMain.innerText = "RISTORANTE-PIZZERIA-BAR";
+            logoPrimary.setAttribute("src", "./assets/img/logo.png");
+            containerRistorante.style.display = "block";
+            conatainerStringHoppers.style.display = "none";
+         } else if (index === 2) {
+            // function for contact
+
+            console.log("build a form");
+         }
+      });
+   });
+
+   console.log("this it primary menu: ", menu);
 };
