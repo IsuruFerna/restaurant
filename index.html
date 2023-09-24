@@ -23,10 +23,15 @@
    <body>
       <header>
          <div class="logo">
-            <img class="logo" src="./assets/img/logo.png" alt="logo" />
+            <img
+               id="logo-primary"
+               class="logo"
+               src="./assets/img/logo.png"
+               alt="logo"
+            />
          </div>
          <div class="primary-title">
-            <h1>RISTORANTE-PIZZERIA-BAR</h1>
+            <h1 id="main-title">RISTORANTE-PIZZERIA-BAR</h1>
          </div>
          <div class="nav">
             <nav>
@@ -37,7 +42,7 @@
                >
                   <li class="nav-item" role="presentation">
                      <button
-                        class="nav-link active rounded-5"
+                        class="nav-link rounded-5"
                         id="home-tab2"
                         data-bs-toggle="tab"
                         type="button"
@@ -49,14 +54,14 @@
                   </li>
                   <li class="nav-item" role="presentation">
                      <button
-                        class="nav-link rounded-5"
+                        class="nav-link rounded-5 active"
                         id="profile-tab2"
                         data-bs-toggle="tab"
                         type="button"
                         role="tab"
                         aria-selected="false"
                      >
-                        RISTORRANTE-PIZZERIA-BAR
+                        RISTORANTE-PIZZERIA-BAR
                      </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -87,21 +92,23 @@
          </div>
       </header>
       <main>
-         <!-- ******************** Pizze ********************* -->
-         <div id="pizza" class="container container-sri_lankan">
-            <div class="secondary-title">
-               <h2>Pizza Menu</h2>
-            </div>
+         <!-- restaurant page -->
+         <div id="container-ristorante-page">
+            <!-- ******************** Pizze ********************* -->
+            <div id="pizza" class="container container-sri_lankan">
+               <div class="secondary-title">
+                  <h2>Pizza Menu</h2>
+               </div>
 
-            <!-- Pizza classiche -->
-            <div id="le-classiche" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>LE CLASSICHE</h3>
-                  </div>
+               <!-- Pizza classiche -->
+               <div id="le-classiche" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>LE CLASSICHE</h3>
+                     </div>
 
-                  <!-- this is how it looks an item, ingredient and price is rendered in html format -->
-                  <!-- <div class="menu-listing">
+                     <!-- this is how it looks an item, ingredient and price is rendered in html format -->
+                     <!-- <div class="menu-listing">
                      <div class="menu-item">
                         <div class="name">
                            <p>Special Rice</p>
@@ -114,48 +121,48 @@
                         </div>
                      </div>
                   </div> -->
-               </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
-               </div>
-            </div>
-
-            <!-- Pizza bianche -->
-            <div id="pizze-bianche" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>PIZZE BIANCHE</h3>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
                   </div>
                </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
+
+               <!-- Pizza bianche -->
+               <div id="pizze-bianche" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>PIZZE BIANCHE</h3>
+                     </div>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
+                  </div>
                </div>
             </div>
-         </div>
 
-         <!-- ******************** Sri Lankan ********************* -->
-         <div id="sri-lankan" class="container container-sri_lankan">
-            <div class="secondary-title">
-               <h2>
-                  Sri Lankan<br />
-                  Menu
-               </h2>
-            </div>
-            <!-- rice -->
-            <div id="rice" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>FRIED RICE</h3>
-                  </div>
+            <!-- ******************** Sri Lankan ********************* -->
+            <div id="sri-lankan" class="container container-sri_lankan">
+               <div class="secondary-title">
+                  <h2>
+                     Sri Lankan<br />
+                     Menu
+                  </h2>
+               </div>
+               <!-- rice -->
+               <div id="rice" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>FRIED RICE</h3>
+                     </div>
 
-                  <!-- this is how it looks an item, ingredient and price is rendered in html format -->
-                  <!-- <div class="menu-listing">
+                     <!-- this is how it looks an item, ingredient and price is rendered in html format -->
+                     <!-- <div class="menu-listing">
                      <div class="menu-item">
                         <div class="name">
                            <p>Special Rice</p>
@@ -168,190 +175,248 @@
                         </div>
                      </div>
                   </div> -->
-               </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
-               </div>
-            </div>
-            <!-- Batter -->
-            <div id="batter" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>BATTER</h3>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
                   </div>
                </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
-               </div>
-            </div>
-            <!-- noodles -->
-            <div id="noodles" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>NOODLES</h3>
+               <!-- Batter -->
+               <div id="batter" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>BATTER</h3>
+                     </div>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
                   </div>
                </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
-               </div>
-            </div>
-            <!-- chili -->
-            <div id="chili" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>CHILI</h3>
+               <!-- noodles -->
+               <div id="noodles" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>NOODLES</h3>
+                     </div>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
                   </div>
                </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
-               </div>
-            </div>
-            <!-- kottu -->
-            <div id="kottu" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>KOTTU</h3>
+               <!-- chili -->
+               <div id="chili" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>CHILI</h3>
+                     </div>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
                   </div>
                </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
-               </div>
-            </div>
-            <!-- fried -->
-            <div id="fried" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>FRIED</h3>
+               <!-- kottu -->
+               <div id="kottu" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>KOTTU</h3>
+                     </div>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
                   </div>
                </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
-               </div>
-            </div>
-            <!-- devilled -->
-            <div id="devilled" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>DEVILLED</h3>
+               <!-- fried -->
+               <div id="fried" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>FRIED</h3>
+                     </div>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
                   </div>
                </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
-               </div>
-            </div>
-            <!-- stew -->
-            <div id="stew" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>STEW</h3>
+               <!-- devilled -->
+               <div id="devilled" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>DEVILLED</h3>
+                     </div>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
                   </div>
                </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
-               </div>
-            </div>
-            <!-- short eats -->
-            <div id="short_eats" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>SHORT EATS</h3>
+               <!-- stew -->
+               <div id="stew" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>STEW</h3>
+                     </div>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
                   </div>
                </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
+               <!-- short eats -->
+               <div id="short_eats" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>SHORT EATS</h3>
+                     </div>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
+                  </div>
+               </div>
+            </div>
+
+            <!-- ******************** Dessert ********************* -->
+            <div id="dessert-main" class="container container-desert">
+               <div class="secondary-title">
+                  <h2>Dessert</h2>
+               </div>
+
+               <!-- dessert -->
+               <div id="dessert" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>DESSERT</h3>
+                     </div>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
+                  </div>
+               </div>
+            </div>
+
+            <!-- ******************** Ice cream ********************* -->
+            <div id="ice_cream-main" class="container container-desert">
+               <div class="secondary-title">
+                  <h2>Ice Cream</h2>
+               </div>
+
+               <!-- ice cream -->
+               <div id="ice_cream" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>ICE CREAM</h3>
+                     </div>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
+                  </div>
+               </div>
+            </div>
+
+            <!-- ******************** Frutta ********************* -->
+            <div id="frutta-main" class="container container-desert">
+               <div class="secondary-title">
+                  <h2>Frutta</h2>
+               </div>
+
+               <!-- frutta -->
+               <div id="frutta" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>FRUTTA</h3>
+                     </div>
+                  </div>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
+                  </div>
                </div>
             </div>
          </div>
 
-         <!-- ******************** Dessert ********************* -->
-         <div id="dessert-main" class="container container-desert">
-            <div class="secondary-title">
-               <h2>Dessert</h2>
-            </div>
+         <!-- string hopper page -->
+         <div id="container-string_hoppers-page">
+            <!-- ******************** string hoppers ********************* -->
+            <div
+               id="string-hoppers-menu"
+               class="container container-string_hoppers"
+            >
+               <div class="secondary-title">
+                  <h2>String Hoppers</h2>
+               </div>
 
-            <!-- dessert -->
-            <div id="dessert" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>DESSERT</h3>
+               <!-- Pizza classiche -->
+               <div id="string-hoppers" class="container-menu">
+                  <div class="menu-items">
+                     <div class="third-title">
+                        <h3>STRING HOPPERS</h3>
+                     </div>
+
+                     <!-- this is how it looks an item, ingredient and price is rendered in html format -->
+                     <div class="menu-listing">
+                        <div class="menu-item">
+                           <div class="name">
+                              <p>SAMPLE</p>
+                              <div class="ingredients">
+                                 <p>LOREM, SAMPLE, TEXT, INGREDIENT</p>
+                              </div>
+                           </div>
+                           <div class="price">
+                              <p>10.00 €</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="menu-listing">
+                        <div class="menu-item">
+                           <div class="name">
+                              <p>LOREM</p>
+                              <div class="ingredients">
+                                 <p>LOREM, SAMPLE, TEXT, INGREDIENT</p>
+                              </div>
+                           </div>
+                           <div class="price">
+                              <p>10.00 €</p>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-               </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
-               </div>
-            </div>
-         </div>
-
-         <!-- ******************** Ice cream ********************* -->
-         <div id="ice_cream-main" class="container container-desert">
-            <div class="secondary-title">
-               <h2>Ice Cream</h2>
-            </div>
-
-            <!-- ice cream -->
-            <div id="ice_cream" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>ICE CREAM</h3>
+                  <div class="menu-img">
+                     <img
+                        src="./assets/img/fried-rice.png"
+                        alt="image-of-fried-rice"
+                     />
                   </div>
-               </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
-               </div>
-            </div>
-         </div>
-
-         <!-- ******************** Frutta ********************* -->
-         <div id="frutta-main" class="container container-desert">
-            <div class="secondary-title">
-               <h2>Frutta</h2>
-            </div>
-
-            <!-- frutta -->
-            <div id="frutta" class="container-menu">
-               <div class="menu-items">
-                  <div class="third-title">
-                     <h3>FRUTTA</h3>
-                  </div>
-               </div>
-               <div class="menu-img">
-                  <img
-                     src="./assets/img/fried-rice.png"
-                     alt="image-of-fried-rice"
-                  />
                </div>
             </div>
          </div>
