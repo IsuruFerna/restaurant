@@ -402,7 +402,154 @@ const menu = {
             ["kechup", "aglio", "zenzero", "cipolla", "pomodoro"],
          ],
       },
-      // ********** Manca dal beef devilled ***********
+      {
+         type: "devilled",
+         name: "beef devilled",
+         price: ["12.00", "18.00"],
+         ingredient: [
+            ["manzo"],
+            ["kechup", "aglio", "zenzero", "cipolla", "pomodoro"],
+         ],
+      },
+      {
+         type: "devilled",
+         name: "pork devilled",
+         price: ["12.00", "16.00"],
+         ingredient: [
+            ["suino"],
+            ["kechup", "aglio", "zenzero", "cipolla", "pomodoro"],
+         ],
+      },
+      {
+         type: "devilled",
+         name: "fish devilled",
+         price: ["12.00", "18.00"],
+         ingredient: [
+            ["pesce"],
+            ["kechup", "aglio", "zenzero", "cipolla", "pomodoro"],
+         ],
+      },
+      {
+         type: "devilled",
+         name: "prawn devilled",
+         price: ["14.00", "20.00"],
+         ingredient: [
+            ["gamberi"],
+            ["kechup", "aglio", "zenzero", "cipolla", "pomodoro"],
+         ],
+      },
+      {
+         type: "devilled",
+         name: "cuttlefish devilled",
+         price: ["14.00", "20.00"],
+         ingredient: [
+            ["seppie"],
+            ["kechup", "aglio", "zenzero", "cipolla", "pomodoro"],
+         ],
+      },
+      {
+         type: "stew",
+         name: "chicken stew",
+         price: ["16.00"],
+         ingredient: [["pollo"], ["chipolla", "aglio", "zenzero", "pepe nero"]],
+      },
+      {
+         type: "stew",
+         name: "beef stew",
+         price: ["18.00"],
+         ingredient: [["manzo"], ["chipolla", "aglio", "zenzero", "pepe nero"]],
+      },
+      {
+         type: "stew",
+         name: "pork stew",
+         price: ["18.00"],
+         ingredient: [["suino"], ["chipolla", "aglio", "zenzero", "pepe nero"]],
+      },
+      {
+         type: "short eats",
+         name: "beef roti",
+         price: ["2.00"],
+         ingredient: [
+            ["manzo"],
+            [
+               "farina tipo 00",
+               "patate",
+               "porri",
+               "sale",
+               "pepe",
+               "aglio",
+               "zenzero",
+            ],
+         ],
+      },
+      {
+         type: "short eats",
+         name: "vegetable roti",
+         price: ["2.00"],
+         ingredient: [
+            [],
+            [
+               "farina tipo 00",
+               "patate",
+               "porri",
+               "sale",
+               "pepe",
+               "aglio",
+               "zenzero",
+            ],
+         ],
+      },
+      {
+         type: "short eats",
+         name: "rolls",
+         price: ["1.50"],
+         ingredient: [
+            ["tonno"],
+            ["cipolla", "patate", "sale", "pepe", "aglio", "zenzero"],
+         ],
+      },
+      {
+         type: "short eats",
+         name: "cutlet",
+         price: ["1.00"],
+         ingredient: [
+            ["tonno"],
+            ["cipolla", "patate", "sale", "pepe", "aglio", "zenzero"],
+         ],
+      },
+      {
+         type: "short eats",
+         name: "fish bun",
+         price: ["2.00"],
+         ingredient: [
+            ["pesce"],
+            [
+               "farina tipo 00",
+               "cipolla",
+               "patate",
+               "porri",
+               "aglio",
+               "zenzero",
+            ],
+         ],
+      },
+      {
+         type: "short eats",
+         name: "patties",
+         price: ["2.00"],
+         ingredient: [
+            ["tonno"],
+            [
+               "farina tipo 00",
+               "cipolla",
+               "patate",
+               "aglio",
+               "zenzero",
+               "pepe",
+               "sale",
+            ],
+         ],
+      },
    ],
    pizza: [
       {
@@ -621,6 +768,30 @@ const menu = {
       },
    ],
    bibite: [],
+   dessert: [
+      {
+         type: "dessert",
+         name: "watalappan",
+         price: ["2.50"],
+         ingredient: [[], ["uova", "zucchero", "latte"]],
+      },
+   ],
+   iceCream: [
+      {
+         type: "ice cream",
+         name: "gelato",
+         price: ["3.00"],
+         ingredient: [[], []],
+      },
+   ],
+   frutta: [
+      {
+         type: "frutta",
+         name: "frutta mist",
+         price: [],
+         ingredient: [[], []],
+      },
+   ],
 };
 
 // exporting menu as a JSON
