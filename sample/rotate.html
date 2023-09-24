@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>rotate</title>
+      <link rel="stylesheet" href="rotate.css" />
+   </head>
+   <body onclick="rotateBox()">
+      <div class="container">
+         <div class="box" id="box">
+            <span style="--i: 1"><i>CSS</i> Is <i>A</i><i>wesome</i></span>
+            <span style="--i: 2"><i>CSS</i> Is <i>A</i><i>wesome</i></span>
+            <span style="--i: 3"><i>CSS</i> Is <i>A</i><i>wesome</i></span>
+         </div>
+      </div>
+
+      <script>
+         let rotation = 0;
+         function rotateBox() {
+            rotation += 120;
+            let box = document.getElementById("box");
+            let textBg = box.getElementsByTagName("span");
+            textBg = Array.from(textBg);
+            const colorBefore = `rgba(102, 51, 153, 1)`;
+            const colorAfter = `rgba(102, 51, 153, 0)`;
+
+            const bgColor = function (col) {
+               textBg.forEach((element) => {
+                  element.style.transition = "background-color 2s ease-in-out";
+                  element.style.backgroundColor = col;
+               });
+            };
+
+            bgColor(colorAfter);
+            setTimeout(function () {
+               bgColor(colorBefore);
+            }, 1000); // Change background color after 2 seconds
+            box.style.transition = "transform 2s ease-in-out";
+            box.style.transform =
+               "perspective(1000px) rotateY(" + rotation + "deg)";
+         }
+      </script>
+   </body>
+</html>

@@ -116,6 +116,12 @@ const renderEachMenuList = function (element, appendIn) {
 
    // make a function that put a space after each comma and convert each word to upper case
    const ingredients = element.ingredient;
+   console.log(ingredients);
+   // let textIngredient = "";
+   // for (let i = 0; i < ingredients.length; i++) {
+   //    console.log(ingredients[i]);
+   //    // if (typeof ingredients[i] !== "string" )
+   // }
 
    menuListing.innerHTML = `
                    <div class="menu-item">
@@ -132,6 +138,8 @@ const renderEachMenuList = function (element, appendIn) {
                      </div>
                    </div>
               `;
+
+   // menuListing.querySelector(".ingredients");
 
    appendIn.getElementsByClassName("menu-items")[0].appendChild(menuListing);
 };
